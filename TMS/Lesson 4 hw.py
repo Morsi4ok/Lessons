@@ -78,3 +78,19 @@ def xor_cipher(string, key):
     return encrypt_string
 # для расшифровки будет аналогичная функция
 # если ввести результат введённой функции,то расшифрует в исходную
+# в целом немного подккоректировал именно для запуска
+def main():
+    string = "5a4asdf"
+    key = "gasa4fasdf"
+    d = xor_cipher(string, key)
+
+
+def xor_cipher(string, key):
+    encrypt_string = ''
+    for s, k in zip(string, key):
+        encrypt_string += chr(ord(s) ^ ord(k))
+
+    return encrypt_string
+
+
+main()
