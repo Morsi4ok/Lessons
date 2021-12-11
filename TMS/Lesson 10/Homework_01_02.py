@@ -46,7 +46,7 @@ class Circle(Figure):
         self.radius_length = radius_length
 
     def perimeter_circle(self):
-        perimeter = self.radius_length * 2
+        perimeter = self.radius_length * 2 * math.pi
         return perimeter
 
     def area_circle(self):
